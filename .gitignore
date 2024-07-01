@@ -1,0 +1,7 @@
+ebpf-go
+bpf_bpfel_x86.*
+.o
+.vscode
+vershitifier
+*.o
+out
