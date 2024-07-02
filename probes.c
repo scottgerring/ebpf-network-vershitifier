@@ -230,7 +230,7 @@ int tc_filter_traffic(struct __sk_buff *skb) {
 	if (skb->mark == 123) {
 		__u32 rand = bpf_get_prandom_u32();
 		
-		// 50% drop rate
+		// Drop rate read from userspace program
 		if (rand % 100 <= drop_percentage) {
 			// Update stats
 			record_one_packet(DROPPED_PACKETS_OFFSET);

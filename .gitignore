@@ -5,3 +5,4 @@ bpf_bpfel_x86.*
 vershitifier
 *.o
 out
+bpf_x86_bpfel.go
